@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component} from '@angular/core';
+import { RouterModule, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { BodyComponent } from './body/body.component';
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [SideNavComponent, BodyComponent, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sourwithan';
+  title = 'project1';
+
+  isSideNavCollapsed = true;
+  screenWidth = 0;
+  
+  onToggleSideNav(event: { collapsed: boolean; screenWidth: number }): void {
+    this.isSideNavCollapsed = event.collapsed;
+    this.screenWidth = event.screenWidth;
+  }
 }

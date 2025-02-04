@@ -1,0 +1,21 @@
+<div class = "sidenav" [ngClass] = "collapsed ? 'sidenav-collapsed' : ''">
+    <div class = "logo-container">
+        <button class = "logo-button" (click) = "toggleCollapse()">
+            <img class="logo icon" src="../../assets/favicon.ico" alt="Logo Icon">
+        </button>
+            <div class = "logo-text" *ngIf = "collapsed">Katiana's Portfolio</div>
+        <button class = "close-button" *ngIf = "collapsed" (click) = "closeSidenav()">
+            <img class="close icon" src="../../assets/icons/close.ico" alt="Close Icon">
+        </button>
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" *ngFor="let item of navList">
+            <a class="sidenav-nav-link" [routerLink]="item.routerLink"
+                routerLinkActive = "active" [routerLinkActiveOptions] = "{exact: true}"
+            >
+                <img class="sidenav-nav-icon" [src]="item.icon" [alt]="item.label + ' Icon'">
+            <span class="sidenav-nav-text" *ngIf="collapsed">{{ item.label }}</span>
+            </a>
+        </li>
+    </ul>
+</div>    
