@@ -25,7 +25,8 @@ export class SideNavComponent implements OnInit {
     {routerLink: '', icon: '../../assets/icons/home.ico', label: 'Homepage' },
     {routerLink: '/resume', icon: '../../assets/icons/resume.ico', label: 'Resume' },
     {routerLink: '/python', icon: '../../assets/icons/python.ico', label: 'Python Projects' },
-    {routerLink: '/calc', icon: '../../assets/icons/calculator.ico', label: 'Calculator' }
+    {routerLink: '/calc', icon: '../../assets/icons/calculator.ico', label: 'Calculator' },
+    {routerLink: '/login', icon: '../../assets/icons/account.ico', label: 'Logging In' }
   ];
 
   
