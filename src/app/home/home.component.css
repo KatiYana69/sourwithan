@@ -1,0 +1,57 @@
+.header-box {
+    background: #FFFFFF;
+    border-radius: 50px;
+    display: grid;
+    grid-template-areas:
+    "text-box image-box";
+}
+
+.career-desc {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ecb80b;
+}
+
+.myName {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 500;
+    color: #ecb80b;
+}
+
+.top-header {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 500;
+    color: #f1e208;
+}
+
+.desc {
+    margin: 0;
+    color: #f1e208;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bigMe {
+    position: relative;
+    border-radius: 50%;
+    left: 200px;
+    width: 500px; /* Adjust as needed */
+    height: 500px;
+    object-fit: cover;
+    padding: 10px 10px;
+    border: 5px dotted #ecb80b;
+}
+
+.littleMe {
+    position: relative;
+    top: -10px;
+    right: 475px;
+    border-radius: 50%;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    object-fit: cover;
+    border: 5px dotted #ecb80b;
+}

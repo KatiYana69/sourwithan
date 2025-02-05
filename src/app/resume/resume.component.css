@@ -1,0 +1,186 @@
+
+@media (min-width: 950px) {
+    .content {
+        margin-right: 50px;
+    }
+}
+
+.content {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas: 
+        "image-container other-container";
+    grid-template-rows: auto auto; /* Adjust row heights */
+    grid-template-columns: 1fr 5fr; /* Adjust column sizes */
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas: 
+        "image-box"
+        "info"
+        "skills";
+}
+
+.image {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    border-radius: 10%;
+    box-shadow: 0.063rem 0 1.25rem 0 #000000;
+}
+
+.info .skills {
+    width: 200px;
+    height: 175px;
+}
+
+.image-label {
+    position: absolute;
+    top: 45%;
+    right: 25%;
+    background-color: #FFFFFF; /* Optional: Background for better visibility */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 5px 5px; /* Padding for the label */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Text weight */
+    text-align: center; /* Ensures text is centered */
+    box-shadow: 0.063rem 0 1.25rem 0 #000000;
+}
+
+.image-label .nameBox {
+    margin: 0;
+}
+
+.small-box {
+    position: relative;
+    background: #FFFFFF;
+    padding: 5px 5px; /* Padding for the label */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0.063rem 0 1.25rem 0 #000000;
+}
+
+.small-item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.625rem;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.5rem;
+    text-align: center;
+}
+
+.icon-text {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 5px; /* Padding for the label */
+}
+
+.icon-header-text {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 5px 5px; /* Padding for the label */
+}
+
+.icon-header {
+    width: 48px;
+    height: 48px;
+    margin: 0 0.5rem;
+    text-align: center;
+    margin: left;
+}
+
+.other-container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas:
+    "work"
+    "edu";
+}
+.big-box {
+    grid-template-rows: repeat(2, 1fr);
+    background: #ffffff;
+    width: 100%; /* Takes up full width of its grid area */
+    height: auto; /* Adjusts height based on content */
+    min-height: 100px; /* Ensures it always has a minimum height */
+    min-width: 80px;
+    border-radius: 10px; /* Optional rounded corners */
+    justify-content: left; /* Center content horizontally */
+    align-items: top; /* Center content vertically */
+    box-shadow: 0.063rem 0 1.25rem 0 #000000;
+}
+
+.big-box-grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "big-header big-header"
+    "left-box right-box";
+}
+
+.big-header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.left-box {
+    grid-area: left-box;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 80%;
+}
+
+.left-item {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.icon-subheader {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 5px; /* Padding for the label */
+}
+
+.icon-date {
+    color: #0064A4;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 5px; /* Padding for the label */
+    margin-left: auto;
+}
+
+.left-description {
+    font-size: 16px; /* Padding for the label */
+    margin-left: 2rem;
+}
+
+.icon-frt {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.right-item {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: 100px;
+}
+
+.right-box {
+    margin-top: 1rem;
+    grid-area: right-box;
+    padding: 0px 25px;
+}

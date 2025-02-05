@@ -1,8 +1,7 @@
-.form {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: #000000;
-    border-radius: 10px;
-    padding: 20px;
+form {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 16px 16px 24px;
+    box-shadow: 0.063rem 0 1.25rem 0 #c59803;
+    border: 10px;
 }
